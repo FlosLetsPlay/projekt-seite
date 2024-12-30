@@ -1,0 +1,11 @@
+.card{padding: 0 10px;}
+.aktiv::before{content: "▶ Aktiv";color: green;font-weight: bold;margin: 5px 0;padding: 0.5em 1em;background-color: rgba(0, 255, 0, 0.3);border: 2px solid green;border-radius: 50px;}
+.pausiert::before{content: "⏸ Pausiert";color: rgb(255, 123, 0);font-weight: bold;margin: 5px 0;padding: 0.5em 1em;background-color: rgba(255, 196, 0, 0.3);border: 2px solid rgb(255, 123, 0);border-radius: 50px;}
+.inaktiv::before{content: "⏹ Inaktiv";color: red;font-weight: bold;margin: 5px 0;padding: 0.5em 1em;background-color: rgba(255, 0, 0, 0.3);border: 2px solid red;border-radius: 50px;}
+
+/*Links*/
+a{color: black;text-decoration: none;margin: 5px 0;padding: 0.5em 1em;background-color: lightgrey;}
+a:hover{color: white;text-decoration: none;background-color: rgb(111, 111, 111);}
+a:visited{color: black;text-decoration: none;margin: 5px 0;padding: 0.5em 1em;background-color: lightgrey;}
+a.projekt::after{content: "zum Projekt »";margin-left: 5px;}
+a.extern::before{content: "↗";margin-right: 5px;}
