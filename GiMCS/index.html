@@ -7,7 +7,19 @@
     <link rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/css/GiMCS-style.css">
-    <script>function copylink() {var copyText = document.getElementsByClassName("flp-code");var i;for (i = 0; i < copyText.length; i++) {copyText[i].addEventListener("click", function() {var textArea = document.createElement("textarea");textArea.value = this.innerHTML;document.body.appendChild(textArea);textArea.select();document.execCommand('copy');document.body.removeChild(textArea);alert("IP-Adresse kopiert: " + this.innerHTML);});}}</script>
+    <script> 
+        function copylink() 
+            {
+                var copyText = document.getElementsByClassName("flp-code");
+                var i;
+                for (i = 0; i < copyText.length; i++) {copyText[i].addEventListener("click", function() {var textArea = document.createElement("textarea");textArea.value = this.innerHTML;
+                document.body.appendChild(textArea);
+                textArea.select();document.execCommand('copy');
+                document.body.removeChild(textArea);alert("IP-Adresse kopiert: " + this.innerHTML);
+                });
+                }
+            }
+    </script>
 </head>
 <body>
     <header>
@@ -48,6 +60,15 @@
                     <td><a href="./regeln.html">Hier</a> findest du die Regeln des Servers.</td>
                 </tr>
             </table>
+            <iframe name="namemc" style="width:728px;height:90px;max-width:100%;border:none;display:block;margin:1em 0" src="https://namemc.com/server/mc.flosletsplay.xyz/embed" width="728" height="90"></iframe>
+        </div>
+        <div class="w3-container" id="entbannungsantrag">
+            <h2>Entbannungsantrag</h2>
+            <p>Wenn du gebannt wurdest und der Meinung bist, dass dies ungerechtfertigt war, kannst du <a href="./entbannungsantrag.html">hier</a> einen Entbannungsantrag stellen.</p>
+        </div>
+        <div class="w3-container" id="bewerbung">
+            <h2>Bewerbung</h2>
+            <p>Unsere offnen Stellen findest du <a href="./bewerbung.html">hier</a>.</p>
         </div>
         <div class="w3-container" id="regeln">
             <h2>Regeln</h2>
