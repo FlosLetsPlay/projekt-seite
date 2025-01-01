@@ -7,7 +7,7 @@
     <link rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/css/GiMCS-style.css">
-    <base href="https://dev.flosletsplay.xyz/GiMCS/" target="_self">
+    <script>function copylink() {var copyText = document.getElementsByClassName("flp-code");var i;for (i = 0; i < copyText.length; i++) {copyText[i].addEventListener("click", function() {var textArea = document.createElement("textarea");textArea.value = this.innerHTML;document.body.appendChild(textArea);textArea.select();document.execCommand('copy');document.body.removeChild(textArea);alert("IP-Adresse kopiert: " + this.innerHTML);});}}</script>
 </head>
 <body>
     <header>
@@ -16,17 +16,18 @@
             <p>Willkommen auf der offiziellen Webseite des inoffiziellen Gronkh Community Minecraft Servers.</p>
             <p>Der Server ist ein Projekt von Fans für Fans und steht in keiner Verbindung zu Gronkh oder seinem Team.</p>
             <nav class="w3-bar w3-purple w3-left" style="padding: 10px 25px; text-decoration-line: none;">
-                <a href="./">Startseite</a> | 
-                <a href="regeln">Regeln</a> | 
-                <a href="entbannungsantrag">Entbannungsantrag</a> |
-                <a href="downloads/">Downloads</a>
+                <a class="w3-bar-item" href="./">Startseite</a>
+                <a class="w3-bar-item" href="./regeln.html">Regeln</a>
+                <a class="w3-bar-item" href="./entbannungsantrag.html">Entbannungsantrag</a>
+                <a class="w3-bar-item" href="./bewerbung.html">Bewerbung</a>
+                <a class="w3-bar-item" href="./downloads/index.html">Downloads</a>
             </nav>
         </div>
         <div class="w3-container w3-display-topright">
             <p><script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Hilf mir', '#c20bbc', 'G2G317YDQK');kofiwidget2.draw();</script> </p>
         </div>
         <div class="w3-container w3-display-topleft projektseite w3-card-4">
-            <p><a href="https://dev.flosletsplay.xyz" target="_self" rel="noopener noreferrer">Projektübersicht</a></p>
+            <p><a style="text-decoration: none;" href="https://dev.flosletsplay.xyz" target="_self" rel="noopener noreferrer">Projektübersicht</a></p>
         </div>
     </header>
     <main>
@@ -36,7 +37,7 @@
             <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable">
                 <tr>
                     <th>Server-IP</th>
-                    <td>flosletsplay.net oder 85.215.78.214</td>
+                    <td><span class="flp-code" onclick="copylink()">mc.flosletsplay.xyz</span> oder <span class="flp-code" onclick="copylink()">85.215.78.214</span></td>
                 </tr>
                 <tr>
                     <th>Version</th>
@@ -44,7 +45,7 @@
                 </tr>
                 <tr>
                     <th>Regeln</th>
-                    <td><a href="#regeln">Hier</a> findest du die Regeln des Servers.</td>
+                    <td><a href="./regeln.html">Hier</a> findest du die Regeln des Servers.</td>
                 </tr>
             </table>
         </div>
@@ -58,19 +59,19 @@
                 </tr>
                 <tr>
                     <td>Chatregeln</td>
-                    <td><a href="regeln.html#regeln-chat">Chat</a></td>
+                    <td><a href="./regeln.html#regeln-chat">Chat</a></td>
                 </tr>
                 <tr>
                     <td>Bauwerke</td>
-                    <td><a href="regeln.html#regeln-bauwerke">Bauwerke</a></td>
+                    <td><a href="./regeln.html#regeln-bauwerke">Bauwerke</a></td>
                 </tr>
                 <tr>
                     <td>Spielprofil</td>
-                    <td><a href="regeln.html#regeln-spielprofil">Spielprofil</a></td>
+                    <td><a href="./regeln.html#regeln-spielprofil">Spielprofil</a></td>
                 </tr>
                 <tr>
                     <td>Cheat, Mods, Regeln</td>
-                    <td><a href="regeln.html#regeln-cheat">Cheat, Mods, Regeln</a></td>
+                    <td><a href="./regeln.html#regeln-cheat">Cheat, Mods, Regeln</a></td>
                 </tr>
             </table>
         </div>
