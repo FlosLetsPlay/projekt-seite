@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+    <title>FlosLetsPlay Projekt Übersicht</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlosLetsPlays Projekte</title>
+    <meta name="description" content="FlosLetsPlay Projekt Wiki">
+    <meta name="keywords" content="Wiki, FlosLetsPlay, Projekt">
+    <meta name="author" content="Florian G.">
     <link rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css'>
     <link rel="stylesheet" href="/css/main-style.css">
-    <link rel="icon" href="/icons/binary.png" type="image/image-png">
 </head>
 <body>
+    <header>
+        <div class="w3-container">
+            <h1>FlosLetsPlay Porjekt Übersicht</h1> 
+        </div>
+        <nav>
+            <div class="w3-bar w3-dark-gray">
+                <a href="/index.html" class="w3-bar-item w3-button active">Startseite</a>
+                <a href="https://docs.flosletsplay.xyz/datenschutzerkl%C3%A4rung.html" class="w3-bar-item w3-button">Datenschtz</a>
+                <a href="https://docs.flosletsplay.xyz/impressum.html" class="w3-bar-item w3-button">Impressum</a>
+            </div>
+        </nav>
+    </header>
     <div class="w3-container">
         <h1>FlosLetsPlays Projekte</h1>
         <p>Willkommen auf meiner Projektseite. Hier findest du alle Projekte, die ich in meiner Freizeit entwickelt habe.</p>
-        <div style="margin-bottom: 10px;">
-            <a href="https://www.flosletsplay.xyz/impressum" rel="noopener noreferrer" target="_blank">Impressum</a>
-            <a href="https://www.flosletsplay.xyz/datenschutz" target="_blank" rel="noopener noreferrer">Datenschutz</a>
-        </div>
         <div class="w3-row">
             <div class="w3-col m3 card">
                 <div class="w3-card-4">
                     <img src="img/projekt_logo-GiMCS.png" alt="Projekt Logo GiMCS" style="width:100%">
-                    <div class="w3-container aktiv">
+                    <div class="w3-container projekt-aktiv">
                         <h3>Gronkhs inofizieller Minecarft Comunity Server</h3>
                         <p>Als eigenes SMP geplant und nach absprache mit dem Support ein Comunity Server für Gronkh Fans.</p>
                         <p><a href="https://docs.flosletsplay.xyz/docs/GiMCS/index.html" target="_self" rel="noopener noreferrer" class="w3-right projekt"></a></p>
@@ -40,5 +50,13 @@
             -->
         </div>
     </div>
+    <footer class="w3-container" style="width: 100%;height: 5%; background-color: #616161; color: white; text-align: center;">
+        <p>&copy; <span id="datum"></span> FlosLetsPlay</p>
+        <script>
+            let datum = new Date();
+            let jahr = datum.getFullYear();
+            document.getElementById('datum').innerHTML = jahr;
+        </script>
+    </footer>
 </body>
 </html>
